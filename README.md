@@ -1,3 +1,5 @@
+# Docker image for Jhead's Phantom proxy
+
 ## Basic usage:
 ```bash
 docker container run --name phantom-proxy -e SERVER=<server ip>:<server_port> --network host nkelemen18/minecraft-phantom-proxy:latest
@@ -8,7 +10,7 @@ Or with docker compose:
 docker-compose up -d
 ```
 
-[Example docker-compose file](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker/docker-compose.yml)
+[Example docker-compose file](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker/blob/master/docker-compose.yml)
 
 ### Available variables:
  - SERVER: Required: Bedrock/MCPE server IP address and port (ex: 1.2.3.4:19132)
