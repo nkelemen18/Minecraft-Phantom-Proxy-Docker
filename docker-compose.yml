@@ -12,4 +12,5 @@ services:
       #IPV6: 1
       #DEBUG: 1
       #REMOVE_PORTS: 1
+      #WORKERS: 16
     network_mode: host

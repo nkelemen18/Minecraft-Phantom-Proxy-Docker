@@ -26,6 +26,11 @@ if [[ -v TIMEOUT ]]; then
   command+=("-timeout ${TIMEOUT}")
 fi
 
+if [[ -v WORKERS ]]; then
+  command+=("-workers ${WORKERS}")
+fi
+
+
 echo "Startin proxy: ${command[@]}"
 
 eval ${command[@]}

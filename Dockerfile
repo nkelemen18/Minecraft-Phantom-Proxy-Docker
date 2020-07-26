@@ -4,7 +4,7 @@ RUN apk add --no-cache bash
 
 WORKDIR /app
 
-ARG PHANTOM_VERSION=0.4.0
+ARG PHANTOM_VERSION=0.5.2
 
 ADD entrypoint.sh .
 
