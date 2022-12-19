@@ -7,15 +7,15 @@ As described by jhead:
 
 ## Basic usage:
 ```bash
-docker container run --name minecraft-proxy-phantom -e SERVER=<server_ip>:<server_port> -e PHANTOM_ARCH=x64 -e PHANTOM_VER=latest --network host alexisspencer/minecraft-proxy-phantom:latest
+docker container run --name minecraft-phantom-proxy -e SERVER=<server_ip>:<server_port> -e PHANTOM_ARCH=x64 -e PHANTOM_VER=latest --network host alexisspencer/minecraft-phantom-proxy:latest
 ```
 Or with docker compose:
 ```bash
 version: '3.6'
 services:
-  minecraft-proxy-phantom:
-    image: alexisspencer/minecraft-proxy-phantom:latest
-    container_name: minecraft-proxy-phantom
+  minecraft-phantom-proxy:
+    image: alexisspencer/minecraft-phantom-proxy:latest
+    container_name: minecraft-phantom-proxy
     environment:
       - SERVER=example.com:19132
       - PHANTOM_ARCH=x64
@@ -47,7 +47,7 @@ services:
 
 *Note: host network mode required.*
 
-[GitHub](https://github.com/alexisspencer/Minecraft-Proxy-Phantom) | 
-[Docker Hub](https://hub.docker.com/r/alexisspencer/minecraft-proxy-phantom)
+[GitHub](https://github.com/alexisspencer/Minecraft-Phantom-Proxy-Docker) | 
+[Docker Hub](https://hub.docker.com/r/alexisspencer/minecraft-phantom-proxy)
 
 Phantom written by jhead: [GitHub](https://github.com/jhead/phantom) | Docker image based on image created originally by nkelemen18: [GitHub](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker) and adaptions by Kirbo: [GitHub](https://github.com/Kirbo/Minecraft-Phantom-Proxy-Docker)
