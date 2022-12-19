@@ -18,10 +18,8 @@ wget "https://github.com/jhead/phantom/releases/download/v${PHANTOM_VER}/phantom
 wget "https://github.com/jhead/phantom/releases/download/v${PHANTOM_VER}/phantom-linux-arm8"
 
 mv phantom-linux phantom-linux-${PHANTOM_ARCH}
-#cp phantom-linux phantom-linux-x64
 
 chmod +x phantom-linux*
-ls /app
 
 
 export IFS=";"
