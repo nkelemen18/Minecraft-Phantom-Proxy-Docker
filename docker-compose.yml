@@ -1,16 +1,18 @@
-version: '3.4'
-
+version: '3.6'
 services:
-  phantom-proxy:
-    image: nkelemen18/minecraft-phantom-proxy:latest
-    container_name: phantom-proxy
+  minecraft-proxy-phantom:
+    image: alexisspencer/minecraft-proxy-phantom:latest
+    container_name: minecraft-proxy-phantom
     environment:
-      SERVER: example.com:19132
-      #BIND_PORT: 0
-      #BIND_IP: 0.0.0.0
-      #TIMEOUT: 60
-      #IPV6: 1
-      #DEBUG: 1
-      #REMOVE_PORTS: 1
-      #WORKERS: 16
+      - SERVER=example.com:19132
+      - PHANTOM_ARCH=x64
+      - PHANTOM_VER=latest
+      # - BIND_PORT=0
+      # - BIND_IP=0.0.0.0
+      # - TIMEOUT=60
+      # - IPV6=1
+      # - DEBUG=1
+      # - REMOVE_PORTS=1
+      # - WORKERS=16
     network_mode: host
+    
