@@ -51,5 +51,7 @@ services:
 [Docker Hub](https://hub.docker.com/r/alexisspencer/minecraft-phantom-proxy)
 
 Phantom written by jhead: [GitHub](https://github.com/jhead/phantom)
+
 Docker image based on original image created by nkelemen18: [GitHub](https://github.com/nkelemen18/Minecraft-Phantom-Proxy-Docker) and adapted by Kirbo: [GitHub](https://github.com/Kirbo/Minecraft-Phantom-Proxy-Docker)
+
 Uses lastversion by dvershinin to extrapolate latest version of a github release: [GitHub](https://github.com/dvershinin/lastversion)
