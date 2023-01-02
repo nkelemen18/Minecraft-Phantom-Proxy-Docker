@@ -35,7 +35,7 @@ services:
 | Variable       | Required     | Description                                 |
 | -------------- | ------------ | ------------------------------------------- |
 | SERVER         | Required     | Bedrock/MCPE server address and the port. <br>Multiple servers can be specified by separating them with `;` <br>Example: `SERVER=192.168.1.5:19132;play.minecraftworld.com:19132` |
-| PHANTOM_ARCH   | Required     | CPU architecture where Phantom is being run. <br>Available Options: `x86`, `x64`, `arm5`, `arm6`, `arm7`, `arm8` <br>Default: `PHANTOM_ARCH=x64` |
+| PHANTOM_ARCH   | *Optional*   | CPU architecture where Phantom is being run. <br>Available Options: `x86`, `x64`, `arm5`, `arm6`, `arm7`, `arm8` <br>Default: `PHANTOM_ARCH=x64` |
 | PHANTOM_VER    | *Optional*   | Specifies the version of Phantom to run. <br>Use `latest` for the latest stable version, `latestpre` for the latest pre-release. Other available versions can be found at [jhead's GitHub](https://github.com/jhead/phantom/releases) <br>Example: `PHANTOM_VER=0.5.4`, Defaults to latest stable release. |
 | IPV6           | *Optional*   | Enables IPv6 support on port 19133. (experimental) <br>Pass `1` to enable this flag! <br>Example: `IPV6=1` |
 | BIND_IP        | *Optional*   | IP address to listen on. Defaults to all interfaces. <br>**NB:** BIND_IP cannot be used when multiple servers are specified in SERVER. <br>default: `BIND_IP=0.0.0.0` |
